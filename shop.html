@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop All — 3D-Printed Lamps, Décor & Gifts | Kuch Bhi Prints</title>
+  <meta name="description" content="Shop 3D-printed lanterns, festive décor, home objects, gifts and custom prints from Kuch Bhi Prints, Lucknow. Filter by category, price, colour and availability.">
+  <meta name="theme-color" content="#F5F0E8">
+  <link rel="canonical" href="shop.html">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Shop All | Kuch Bhi Prints">
+  <meta property="og:description" content="3D-printed lanterns, festive décor, gifts and custom prints.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="shop">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li id="crumbCat" hidden></li></ol></nav>
+        <h1 class="h1" id="shopTitle">Shop all objects</h1>
+        <p class="lead" id="shopLead">Lanterns, festive pieces, décor and gifts, each one printed layer by layer.</p>
+        <div class="shop-cats" id="shopCats" role="group" aria-label="Quick category filter"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container shop">
+        <aside class="filters" id="filters" aria-label="Product filters">
+          <div class="filters__head">
+            <h2>Filters</h2>
+            <button class="icon-btn" type="button" data-close aria-label="Close filters"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+          </div>
+          <form class="filters__body" id="filterForm" onsubmit="return false">
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">Category</legend>
+              <div class="fopts" id="fCats"></div>
+            </fieldset>
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">Price</legend>
+              <div class="fopts" id="fPrice"></div>
+              <div class="price-range" style="margin-top:10px">
+                <label class="visually-hidden" for="fMin">Minimum price</label>
+                <input class="input" id="fMin" type="number" inputmode="numeric" min="0" step="50" placeholder="₹ Min">
+                <span aria-hidden="true">–</span>
+                <label class="visually-hidden" for="fMax">Maximum price</label>
+                <input class="input" id="fMax" type="number" inputmode="numeric" min="0" step="50" placeholder="₹ Max">
+              </div>
+            </fieldset>
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">Availability</legend>
+              <div class="fopts" id="fAvail"></div>
+            </fieldset>
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">Highlights</legend>
+              <div class="fopts" id="fFlags"></div>
+            </fieldset>
+            <fieldset class="fgroup">
+              <legend class="fgroup__title">Colour</legend>
+              <div class="swatches" id="fColours" style="gap:6px"></div>
+            </fieldset>
+          </form>
+          <div class="filters__foot">
+            <button class="btn btn--ghost btn--sm" type="button" data-clear-filters>Clear all</button>
+            <button class="btn btn--primary btn--sm" type="button" data-close id="showResults">Show results</button>
+          </div>
+        </aside>
+
+        <div class="results">
+          <div class="toolbar">
+            <p class="toolbar__count" id="resultCount" aria-live="polite"></p>
+            <div class="toolbar__right">
+              <div class="toolbar__search">
+                <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                <label class="visually-hidden" for="shopSearch">Search products</label>
+                <input class="input" id="shopSearch" type="search" placeholder="Search products" autocomplete="off">
+              </div>
+              <button class="btn btn--ghost btn--sm filter-toggle" type="button" data-open="filters" aria-controls="filters" aria-expanded="false"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg> Filters <span id="filterCount"></span></button>
+              <label class="visually-hidden" for="sortSelect">Sort products</label>
+              <select class="select" id="sortSelect">
+                <option value="featured">Sort: Featured</option>
+                <option value="newest">Sort: Newest</option>
+                <option value="price-asc">Price: Low to high</option>
+                <option value="price-desc">Price: High to low</option>
+                <option value="name">Name: A–Z</option>
+              </select>
+            </div>
+          </div>
+          <div class="active-filters" id="activeFilters"></div>
+          <div class="grid grid--3" id="shopGrid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js" defer></script>
+  <script src="js/art.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/pages/shop.js" defer></script>
+</body>
+</html>

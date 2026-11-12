@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuch Bhi Prints — 3D-Printed Gifts & Décor from Lucknow</title>
+  <meta name="description" content="Socho kuch bhi. Print hum karenge! Kuch Bhi Prints creates 3D-printed lanterns, festive décor, keepsakes and custom prints in Lucknow, India.">
+  <meta name="theme-color" content="#F5F0E8">
+  <link rel="canonical" href="index.html">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kuch Bhi Prints">
+  <meta property="og:title" content="Kuch Bhi Prints — 3D-Printed Gifts & Décor">
+  <meta property="og:description" content="Socho kuch bhi. Print hum karenge! 3D-printed gifts & décor from Lucknow.">
+  <meta property="og:image" content="assets/images/branding/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Kuch Bhi Prints",
+    "slogan": "Socho kuch bhi. Print hum karenge!",
+    "description": "3D-printed gifts and décor.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lucknow", "addressCountry": "IN" },
+    "sameAs": ["https://www.instagram.com/kuchbhiprints/"]
+  }
+  </script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">3D-printed gifts &amp; décor · Lucknow</p>
+          <h1 class="hero__title" id="heroTitle">
+            <span class="hl"><span>Socho</span></span>
+            <span class="hl"><span><em class="squiggle">kuch bhi.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M2 14C40 4 80 4 110 12S190 20 220 10 280 4 298 10" fill="none" stroke="#F2B33D" stroke-width="5" stroke-linecap="round"/></svg></em></span></span>
+            <span class="hl"><span>Print hum karenge.</span></span>
+          </h1>
+          <p class="hero__sub">Think of anything — we’ll print it. Lanterns that glow, festive décor and keepsakes with personality, built layer by layer in Lucknow.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="shop.html">Explore Collection <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--ghost" href="#bestsellers">Discover Bestsellers</a>
+          </div>
+          <ul class="hero__meta" id="heroMeta"></ul>
+        </div>
+
+        <div class="stage" data-tilt="4" role="img" aria-label="Three 3D-printed objects — a glowing lattice lantern, an elephant tealight holder and a diya — being printed layer by layer (placeholder renders)">
+          <div class="stage__bed"></div>
+          <div class="stage__hud" aria-hidden="true">
+            <span class="stage__status" id="stageStatus">Printing</span>
+            <span>Layer <b id="layerCount">000</b>/240</span>
+          </div>
+          <svg class="stage__sticker" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+            <defs><path id="stickerCircle" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+            <circle cx="60" cy="60" r="58" fill="#E5562A"/>
+            <text><textPath href="#stickerCircle">Socho kuch bhi ✦ Print hum karenge ✦</textPath></text>
+            <circle cx="60" cy="60" r="16" fill="#1C1A17"/>
+            <rect x="52" y="54" width="16" height="3" rx="1.5" fill="#F5F0E8"/><rect x="52" y="59" width="11" height="3" rx="1.5" fill="#F5F0E8"/><rect x="52" y="64" width="16" height="3" rx="1.5" fill="#F5F0E8"/>
+          </svg>
+          <figure class="stage__obj stage__obj--main"><div class="stage__float"><div class="printing" id="stageMain"></div></div></figure>
+          <figure class="stage__obj stage__obj--left"><div class="stage__float"><div class="printing" id="stageLeft"></div></div></figure>
+          <figure class="stage__obj stage__obj--right"><div class="stage__float"><div class="printing" id="stageRight"></div></div></figure>
+          <div class="stage__nozzle" aria-hidden="true"></div>
+          <a class="stage__tag" id="stageTag" href="shop.html" aria-label="Shop featured product"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORIES ============ -->
+    <section class="section section--tight" id="collections" aria-labelledby="catTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">Shop by category</p>
+            <h2 class="h2" id="catTitle">Find your kind of object.</h2>
+          </div>
+          <a class="link-arrow" href="shop.html">View all products <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="cats" id="catGrid" data-stagger></div>
+      </div>
+    </section>
+
+    <!-- ============ TRENDING ============ -->
+    <section class="section section--tight" aria-labelledby="trendTitle">
+      <div class="container carousel" data-carousel>
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">Trending now</p>
+            <h2 class="h2" id="trendTitle">What everyone’s eyeing.</h2>
+          </div>
+          <div class="carousel__nav">
+            <button class="carousel__btn" type="button" data-prev aria-label="Previous products"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+            <button class="carousel__btn" type="button" data-next aria-label="Next products"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <div class="carousel__track" id="trendTrack" data-track data-stagger></div>
+        <div class="carousel__progress" data-progress aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============ BESTSELLERS ============ -->
+    <section class="section" id="bestsellers" aria-labelledby="bestTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">Bestsellers</p>
+            <h2 class="h2" id="bestTitle">Our most-loved pieces.</h2>
+          </div>
+          <a class="link-arrow" href="shop.html?sort=featured">Shop bestsellers <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="bento" id="bestGrid" data-stagger></div>
+      </div>
+    </section>
+
+    <!-- ============ THE 3D DIFFERENCE ============ -->
+    <section class="diff on-dark" aria-labelledby="diffTitle">
+      <div class="container section diff__grid">
+        <div class="diff__visual reveal" id="diffVisual" data-tilt="3">
+          <div id="diffArt"></div>
+          <div class="loupe" id="loupe" aria-hidden="true"><div class="loupe__inner" id="loupeInner"></div></div>
+          <p class="diff__annot">Move to inspect the layers</p>
+        </div>
+        <div class="diff__copy">
+          <p class="eyebrow reveal">The 3D difference</p>
+          <h2 class="h2 reveal" id="diffTitle">Every object starts as an idea and grows one layer at a time.</h2>
+          <p class="lead reveal">Hundreds of thin layers stack up to make each piece. That’s why our objects can have lattices, spirals and hollow shapes that would be hard to mould. Look closely and you’ll see the lines that show how it was made.</p>
+          <div class="diff__layers reveal" id="diffLayers" aria-hidden="true"></div>
+          <ol class="diff__list" data-stagger>
+            <li class="diff__item"><span class="diff__num">01</span><div><h3>Layer by layer</h3><p>Each piece is printed from the base up. The fine ridges on the surface are part of its character.</p></div></li>
+            <li class="diff__item"><span class="diff__num">02</span><div><h3>Shapes moulds can’t make</h3><p>Jaali lattices, twisting ribs and hollow forms are where 3D printing does its best work.</p></div></li>
+            <li class="diff__item"><span class="diff__num">03</span><div><h3>Your idea, printed</h3><p>Socho kuch bhi: names, initials, colours and one-off ideas. Tell us what you imagine.</p></div></li>
+            <li class="diff__item"><span class="diff__num">04</span><div><h3>Made in Lucknow</h3><p>Made for Indian homes, festivals and gifting, and printed in Lucknow.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEW ARRIVALS ============ -->
+    <section class="section" aria-labelledby="newTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">New arrivals</p>
+            <h2 class="h2" id="newTitle">Fresh off the print bed.</h2>
+          </div>
+          <a class="btn btn--ghost" href="shop.html?new=1&amp;sort=newest">View all new</a>
+        </div>
+        <div class="grid" id="newGrid" data-stagger></div>
+      </div>
+    </section>
+
+    <!-- ============ SHOWCASE ============ -->
+    <section class="section section--tight" aria-labelledby="showTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">The catalogue</p>
+            <h2 class="h2" id="showTitle">A closer look.</h2>
+            <p class="lead">A few pieces we think deserve the full-page treatment.</p>
+          </div>
+        </div>
+        <div class="showcase" id="showcase"></div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE / CUSTOM CTA ============ -->
+    <section class="band" aria-label="Custom prints">
+      <div class="band__track" id="bandTrack"></div>
+    </section>
+
+    <!-- ============ INSTAGRAM ============ -->
+    <section class="section" aria-labelledby="igTitle">
+      <div class="container">
+        <div class="ig-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">Follow along</p>
+            <h2 class="ig-handle" id="igTitle"><span>@</span>kuchbhiprints</h2>
+          </div>
+          <div style="display:grid;gap:10px;justify-items:start">
+            <p class="muted" style="max-width:36ch">New drops, behind-the-scenes prints and festive specials. See it first on Instagram.</p>
+            <a class="btn btn--primary" id="igFollow" href="https://www.instagram.com/kuchbhiprints/" target="_blank" rel="noopener">Follow us on Instagram</a>
+          </div>
+        </div>
+        <div class="ig-grid" id="igGrid" data-stagger></div>
+        <p class="placeholder-note" id="igNote" style="margin-top:16px" hidden>Placeholder tiles — add real post images in js/products.js → instagramPosts</p>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section section--tight" aria-labelledby="revTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head__copy">
+            <p class="eyebrow">Kind words</p>
+            <h2 class="h2" id="revTitle">From people who’ve unboxed one.</h2>
+          </div>
+        </div>
+        <div class="reviews" id="reviews" data-stagger></div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="section section--tight" aria-labelledby="newsTitle">
+      <div class="container">
+        <div class="news reveal">
+          <div>
+            <p class="eyebrow eyebrow--plain" style="color:var(--ink)">Newsletter</p>
+            <h2 class="news__title" id="newsTitle">Be first to the next drop.</h2>
+          </div>
+          <form class="news__form" data-newsletter novalidate>
+            <p>New prints, festive collections and the occasional behind-the-scenes look. No spam.</p>
+            <div class="news__row">
+              <label for="newsEmail" class="visually-hidden">Email address</label>
+              <input id="newsEmail" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+              <button class="btn btn--primary" type="submit">Subscribe</button>
+            </div>
+            <p class="form-msg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js" defer></script>
+  <script src="js/art.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/pages/home.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom 3D Printing Requests — Socho Kuch Bhi | Kuch Bhi Prints</title>
+  <meta name="description" content="Socho kuch bhi. Print hum karenge! Send Kuch Bhi Prints your idea, reference image, colour and size for a custom 3D-printed piece from Lucknow.">
+  <meta name="theme-color" content="#F5F0E8">
+  <link rel="canonical" href="custom.html">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Custom 3D Prints | Kuch Bhi Prints">
+  <meta property="og:description" content="Your imagination, our creation. Request a custom 3D print.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="custom">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Custom prints</li></ol></nav>
+        <p class="eyebrow">Custom prints</p>
+        <h1 class="h1">Socho kuch bhi. <span class="accent">Print hum karenge.</span></h1>
+        <p class="lead">Your imagination, our creation. Tell us what you have in mind, whether it’s a name plate, a gift with initials, a festive piece in your colours or something entirely new. We’ll get back to you with the details.</p>
+      </div>
+    </section>
+
+    <section class="container" style="padding-bottom:var(--section)">
+      <div class="split">
+        <div class="split__aside">
+          <div class="idea-art reveal" id="ideaArt"></div>
+          <div>
+            <p class="eyebrow" style="margin-bottom:16px">How it works</p>
+            <ol class="steps">
+              <li class="step"><span class="step__n">01</span><div><h3>Share your idea</h3><p>Describe it, add a reference image and pick a colour and rough size.</p></div></li>
+              <li class="step"><span class="step__n">02</span><div><h3>We confirm the details</h3><p>We reply with questions, feasibility, price and timeline. Nothing is charged until you agree.</p></div></li>
+              <li class="step"><span class="step__n">03</span><div><h3>We print it</h3><p>Your piece is printed layer by layer in Lucknow.</p></div></li>
+              <li class="step"><span class="step__n">04</span><div><h3>It’s yours</h3><p>Delivery or pickup is arranged with you directly.</p></div></li>
+            </ol>
+          </div>
+        </div>
+
+        <form class="form-card reveal" id="customForm" novalidate>
+          <div class="form-section">
+            <p class="form-step">Step 1 · The idea</p>
+            <h2 class="form-section__title">What should we print?</h2>
+            <div class="types" role="radiogroup" aria-label="Type of product" id="typeOpts"></div>
+            <div class="field">
+              <label class="field__label" for="cDesc">Describe your idea</label>
+              <textarea class="textarea" id="cDesc" name="description" required minlength="10" maxlength="1200" placeholder="e.g. A name plate for our new home that reads “The Sharmas”, in white with a marigold border…" aria-describedby="cDescHint"></textarea>
+              <p class="field__hint" id="cDescHint">The more detail, the better: purpose, text, style, where it will go.</p>
+              <p class="field__error" id="cDescErr" hidden>Please describe your idea (at least 10 characters).</p>
+            </div>
+            <div class="field">
+              <span class="field__label" id="uploadLbl">Reference images <small>(optional, up to 4)</small></span>
+              <label class="dropzone" id="dropzone">
+                <input type="file" id="cFiles" accept="image/png, image/jpeg, image/webp, image/heic" multiple aria-labelledby="uploadLbl" aria-describedby="uploadHint">
+                <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+                <strong>Drop images here or tap to upload</strong>
+                <small id="uploadHint">JPG, PNG, WEBP · up to 8 MB each. Previews stay on your device; you’ll attach them when you send the message.</small>
+              </label>
+              <div class="previews" id="previews"></div>
+              <p class="field__error" id="fileErr" hidden></p>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <p class="form-step">Step 2 · The details</p>
+            <h2 class="form-section__title">Colour, size &amp; quantity</h2>
+            <div class="field">
+              <span class="field__label" id="colourLbl">Preferred colour <small id="colourName">— No preference</small></span>
+              <div class="swatches" role="radiogroup" aria-labelledby="colourLbl" id="colourOpts"></div>
+            </div>
+            <div class="field">
+              <span class="field__label" id="dimLbl">Approximate size <small>(cm, optional)</small></span>
+              <div class="dims" role="group" aria-labelledby="dimLbl">
+                <label class="visually-hidden" for="cW">Width in cm</label><input class="input" id="cW" type="number" min="0" step="0.5" inputmode="decimal" placeholder="W">
+                <label class="visually-hidden" for="cH">Height in cm</label><input class="input" id="cH" type="number" min="0" step="0.5" inputmode="decimal" placeholder="H">
+                <label class="visually-hidden" for="cD">Depth in cm</label><input class="input" id="cD" type="number" min="0" step="0.5" inputmode="decimal" placeholder="D">
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="field">
+                <label class="field__label" for="cQty">Quantity</label>
+                <input class="input" id="cQty" type="number" min="1" max="500" value="1" inputmode="numeric">
+              </div>
+              <div class="field">
+                <label class="field__label" for="cDate">Needed by <small>(optional)</small></label>
+                <input class="input" id="cDate" type="date">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <p class="form-step">Step 3 · You</p>
+            <h2 class="form-section__title">How do we reach you?</h2>
+            <div class="form-grid">
+              <div class="field">
+                <label class="field__label" for="cName">Name</label>
+                <input class="input" id="cName" autocomplete="name" required>
+                <p class="field__error" id="cNameErr" hidden>Please add your name.</p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="cCity">City</label>
+                <input class="input" id="cCity" autocomplete="address-level2" placeholder="e.g. Lucknow">
+              </div>
+              <div class="field span-2">
+                <label class="field__label" for="cContact">Instagram handle or phone <small>(optional)</small></label>
+                <input class="input" id="cContact" autocomplete="tel" placeholder="@yourhandle or +91…">
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn--primary btn--block" type="submit">Send my request <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="fine" style="text-align:center">Sending a request is free and doesn’t commit you to anything.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js" defer></script>
+  <script src="js/art.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/pages/custom.js" defer></script>
+</body>
+</html>
